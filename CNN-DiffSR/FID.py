@@ -17,4 +17,3 @@ print("- SR_FID : {:.5f}".format(fid_score))
 print16 = "- SR_FID : {:.5f}".format(fid_score)
 
 
-
