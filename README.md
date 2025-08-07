@@ -1,6 +1,6 @@
 # **CNN-DiffSR**
 
-# CNN-DiffSR: An end-to-end Diffusion model with conditional guidance for remote sensing image resolution enhancement
+# Single Remote Sensing Image Super-Resolution via Convolutional Neural Network and Diffusion Model
 
 ## Our code is coming soon 
 
@@ -131,28 +131,28 @@ python test.py -opt=options/test/cnn-diffsr_test.yml               # test
 
 
 
-![](results_img/fig4.png)
+![](results_img/fig5.png)
 
-**Fig. 4.** Visual comparisons of experiments on AID, UC Merced, and NWPU-RESISC45 datasets.
+**Fig. 5.** Visual comparisons of experiments on AID, UC Merced, and NWPU-RESISC45 datasets.
 
 
 
 ### 2.  Results on different classes of NWPU-RESISC45 images
 
-![](results_img/fig5.png)
-
-**Fig. 5.** LPIPS results of SRADSGAN, EDiffSR, and CNN-DiffSR on 21 classes of the NWPU-RESISC45 dataset. Red denotes the best result.
-
-
-
 ![](results_img/fig6.png)
 
-**Fig. 6.** Visual comparisons of experiments on the NWPU-RESISC45 dataset. Here we show six typical scenes.
+**Fig. 6.** LPIPS results of SRADSGAN, EDiffSR, and CNN-DiffSR on 21 classes of the NWPU-RESISC45 dataset. Red denotes the best result.
+
+
+
+![](results_img/fig7.png)
+
+**Fig. 7.** Visual comparisons of experiments on the NWPU-RESISC45 dataset. Here we show six typical scenes.
 
 
 
 ### 3. Real-world remote sensing image super-resolution
 
-![](results_img/fig7.png)
+![](results_img/fig8.png)
 
-**Fig. 7.** Visual comparisons of 4x super-resolution experiments on real-world images. (a) and (b) are basketball_court_600.tif and tennis_court_029.tif images from the NWPU-RESISC45 dataset.
+**Fig. 8.** Visual comparisons of 4x super-resolution experiments on real-world images. (a) and (b) are basketball_court_600.tif and tennis_court_029.tif images from the NWPU-RESISC45 dataset.
