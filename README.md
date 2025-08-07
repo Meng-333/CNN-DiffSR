@@ -50,7 +50,7 @@ Our folder structure is as follows:
 │   ├── test.py
 │   ├── infer.py   (type == "LR_only")
 
-│   ├── MSI_SR_model (DSSR,TransENet,NDSRGAN,SRADSGAN model)
+│   ├── MSI_SR_model (DSSR,TransENet,NDSRGAN,HAT,SRADSGAN model)
 │   ├── EDiffSR (EDiffSR model)
 ```
 
@@ -58,7 +58,7 @@ Our folder structure is as follows:
 
 - CNN-DiffSR (Diffusion model architecture): 
 
-  - Contains eight super-resolution models: ['DSSR', 'TransENet', 'NDSRGAN', 'SRADSGAN', 'DDPM', 'SR3', 'EDiffSR', '**CNN-DiffSR**']
+  - Contains ten super-resolution models: ['DSSR', 'TransENet', 'NDSRGAN', 'HAT', 'SRADSGAN', 'DDPM', 'SR3', 'EDiffSR', 'NeurOpDiff', '**CNN-DiffSR**']
   - MSI_SR_model (traditional generative model architecture): This project is based on [[sradsgan]](https://github.com/Meng-333/SRADSGAN) 
   - EDiffSR (conditional diffusion model): This project is based on [[ediffsr]](https://github.com/XY-boy/EDiffSR) 
 
@@ -107,7 +107,7 @@ python test.py --checkpoint logs/cnn-diffsr_x4/version_0/checkpoints/epoch=483-s
 python infer.py --checkpoint logs/your_checkpoint_path
 ---------------------------------------------------------------
 # DDPM,SR3 (the same as above)
-# DSSR,TransENet,NDSRGAN,SRADSGAN:
+# DSSR,TransENet,NDSRGAN,hat,SRADSGAN:
 cd MSI_SR_model
 python main_dssr.py
 python main_transenet.py
