@@ -1,4 +1,4 @@
-# **CNN-DiffS**
+# **CNN-DiffSR**
 
 # Single Remote Sensing Image Super-Resolution via Convolutional Neural Network and Diffusion Model
 
