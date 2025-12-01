@@ -26,7 +26,6 @@ Our folder structure is as follows:
 │   │   ├── cnn-diffsr_x4.yaml
 │   ├── data
 │   │   ├── __init__.py
-│   │   ├── blindsr_JIF_datamodule.py
 │   │   ├── rssr_datamodule.py
 │   ├── litsr
 │   │   ├── archs
