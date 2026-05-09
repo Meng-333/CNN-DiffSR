@@ -4,7 +4,7 @@
   - Fanen Meng, Zhiguo Jiang, Fengying Xie, Sensen Wu, Zhenhong Du, Haopeng Zhang
   - *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 19, pp. 2641–2657
   - https://ieeexplore.ieee.org/document/11303729
-  - checkpoint: https://pan.baidu.com/s/1s2Is4QxwYDPSIPHxELETUg?pwd=1234 or https://drive.google.com/file/d/1TeWlhkRCxA0sIdquEvbirDO7tWiZwO_2/view?usp=sharing
+  - checkpoint: Link: https://pan.baidu.com/s/1ZYW09S4JiWNd_8_x_WdxDw?pwd=0115 or https://drive.google.com/drive/folders/1SdSU1Q9nca-aQZkf5lEQ6fplRtsVNELp?usp=sharing
 
 ![](results_img/Fig.1.png)
 Fig. 1. Diffusion-based super-resolution methods for remote sensing images. (a) Existing two-stage method: two models are trained independently, resulting in poor model compatibility and a time-consuming training process. (b) The proposed end-to-end method: a CNN model guides the diffusion model, with both trained simultaneously and parameters updated in real time, resulting in higher model compatibility and collaboration. 
@@ -116,7 +116,7 @@ python main_sradsgan.py
 ---------------------------------------------------------------
 net.train()                       # train
 net.mfeNew_validate()             # test
-net.mfeNew_validateByClass()      # classes test
+net.mfeNew_validateByClass()      # 21 classes test
 ---------------------------------------------------------------
 # EDiffSR
 cd EDiffSR/codes/config/sisr
