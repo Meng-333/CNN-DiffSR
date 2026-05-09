@@ -1,17 +1,4 @@
 # **CNN-DiffSR**
-
-# Single Remote Sensing Image Super-Resolution via Convolutional Neural Network and Diffusion Model
-
-## Our code is coming soon 
-
-
-
-![](results_img/CNN-DiffSR.png)
-
-**Fig. 1.** Framework structure of the CNN-DiffSR. The super-resolution dense-sampling residual attention subnetwork (SRDSRAN) is trained end-to-end together with the conditional denoising network, and the parameters are saved together by the pytorch-lightning library.
-
-
-# **CNN-DiffSR**
 **Single Remote Sensing Image Super-Resolution via Convolutional Neural Network and Diffusion Model**
 
   - Fanen Meng, Zhiguo Jiang, Fengying Xie, Sensen Wu, Zhenhong Du, Haopeng Zhang
