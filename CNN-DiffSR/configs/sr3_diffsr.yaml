@@ -1,0 +1,99 @@
+#################################
+##  Configs for the Trainer    ##
+#################################
+trainer:
+  pretrain_epochs: 0
+  max_epochs: 500
+  save_top_k: 20
+  save_period: 10
+  check_val_every_n_epoch: 1
+
+#################################
+##  Configs for the DataModule ##
+#################################
+data_module:
+  name: DataModule
+  args:
+    num_workers: 8
+    rgb_range: 1
+    scale: 4
+    train:
+      data_path: load/Train
+      data_length: 10632
+      data_cache: memory
+      hr_img_sz: 256
+      batch_size: 8
+    valid:
+      data_path: load/val
+      data_first_k: 1
+      
+#######################################
+##  Configs for the LightningModule  ##
+#######################################
+# use Settings from https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement/blob/master/config/sr_sr3_16_128.json
+lit_model:
+  name: SR3VanillaModel
+  args:
+    scale: 4
+    mean: [0.5, 0.5, 0.5]
+    std: [0.5, 0.5, 0.5]
+    ###
+    ema: true
+    ema_rate: 0.999
+
+    unet:
+      in_channel: 6 # input + condition channel
+      out_channel: 3
+      norm_groups: 32
+      inner_channel: 64
+      channel_multiplier: [1,2,4,8,8]
+      attn_res: [16]
+      res_blocks: 2
+      dropout: 0.2
+
+    encoder:
+      name: SRDSRAN_Net
+      args:
+        in_channels: 3
+        out_channels: 3
+        n_residual_blocks: 12
+        n_basic_blocks: 3
+        rla_mode: 'CA-SA'
+        bla_mode: 'CA-SA'
+        ga_mode: 'CA-SA'
+        pool_mode: 'Avg|Max'
+        addconv: True
+        upscale_factor: 4
+      is_train: true
+    diffusion_model:
+      name: SR3VanillaUNet
+      args:
+        in_channel: 6
+        out_channel: 3
+        norm_groups: 32
+        inner_channel: 64
+        channel_mults: [1,2,4,8,8]
+        attn_res: [ 16 ]
+        res_blocks: 2
+        dropout: 0.2
+        image_size: 256
+
+    beta_schedule:
+      schedule: linear
+      n_timestep: 2000
+      linear_start: 0.000001  #1e-6
+      linear_end: 0.01 # 1e-2
+
+    diffusion:
+      image_size: 256
+      channels: 3
+      conditional: true
+      loss_type: 'l1'
+
+    valid:
+      eta: 0
+      scale: 4
+    optimizer:
+      lr: 0.0001
+      lr_scheduler_milestones: [2000]
+      lr_scheduler_gamma: 0.5
