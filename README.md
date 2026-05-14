@@ -3,7 +3,7 @@
 
   - Fanen Meng, Zhiguo Jiang, Fengying Xie, Sensen Wu, Zhenhong Du, Haopeng Zhang
   - *IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing*, vol. 19, pp. 2641–2657
-  - https://ieeexplore.ieee.org/document/11303729
+  - https://ieeexplore.ieee.org/document/11515151
   - checkpoint: Link: https://pan.baidu.com/s/1ZYW09S4JiWNd_8_x_WdxDw?pwd=0115 or https://drive.google.com/drive/folders/1SdSU1Q9nca-aQZkf5lEQ6fplRtsVNELp?usp=sharing
 
 ![](results_img/Fig.1.png)
