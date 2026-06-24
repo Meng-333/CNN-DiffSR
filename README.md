@@ -156,3 +156,18 @@ python test.py -opt=options/test/cnn-diffsr_test.yml               # test
 ![](results_img/Fig.9.png)
 
 **Fig. 9.** Visual comparisons of 4x super-resolution experiments on real-world images. (a) and (b) are basketball_court_600.tif and tennis_court_029.tif images from the NWPU-RESISC45 dataset.
+
+## Citation
+
+If our code helps your research or work, please consider citing our paper. 
+
+```
+F. Meng et al., "Single Remote Sensing Image Super-Resolution via Convolutional Neural Network and Diffusion Model,"
+in IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, vol. 19, pp. 16825-16840, 2026,
+doi: 10.1109/JSTARS.2026.3692310.
+```
+
+## Contact
+
+If you have any questions about it, please feel free to let me know. (email:[mengfanen@tmslab.cn; 12238036@zju.edu.cn]
+
