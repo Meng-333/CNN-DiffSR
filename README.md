@@ -159,7 +159,7 @@ python test.py -opt=options/test/cnn-diffsr_test.yml               # test
 
 ## Citation
 
-If our code helps your research or work, please consider citing our paper. 
+If our code helps with your research or work, please consider citing our paper. 
 
 ```
 F. Meng et al., "Single Remote Sensing Image Super-Resolution via Convolutional Neural Network and Diffusion Model,"
